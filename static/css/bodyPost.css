@@ -21,6 +21,10 @@
     margin: 0;
 }
 
+.container.blog-post > .content > figure > img {
+    width: 30vw;
+}
+
 .container.blog-post > .sidebar {
     grid-area: sidebar;
     display: flex;
@@ -53,10 +57,11 @@
     margin: 10px;
 }
 
+
 @media(min-width:600px) {
     .container.blog-post{
         grid-template-columns: 70% 30%;
-        grid-auto-rows: 5% 85% 10%;
+        grid-auto-rows: 5% 90% 5%;
         grid-template-areas: 
         "hd hd"
         "main sidebar"

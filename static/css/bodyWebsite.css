@@ -56,10 +56,20 @@
     align-items: end;
 }
 
-.container > .content > .item > .type.world {
+.container > .content > .item > .header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container > .content > .item > .header > .type.world {
     color: #2f34b5;
 }
 
-.container > .content > .item > .type.design {
+.container > .content > .item > .header > .type.design {
     color: #2fb53c;
+}
+
+.container > .content > .item > .header > img {
+    height: 5em;
+    border-radius: 4px;
 }
