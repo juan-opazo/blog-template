@@ -1,0 +1,65 @@
+.container.blog-website{
+    grid-template-columns: 100%;
+    grid-auto-rows: 5% 85% 10%;
+    grid-template-areas: 
+    "hd"
+    "main"
+    "ft";
+}
+
+.container.blog-website > .content {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(3, 300px);
+    grid-gap: 1em;
+}
+
+.container > .content > .item  {
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    border: 2px;
+    border-color: #ababab;
+    border-style: solid;
+    padding: 1em;
+    max-width: 40vw;
+    max-height: 200px;
+}
+
+.container > .content > .item > p, h2, h3 {
+    margin: 0;
+}
+
+.container > .content > .item > .type {
+    flex: 6;
+}
+
+.container > .content > .item > .title {
+    flex: 1;
+}
+
+.container > .content > .item > .date {
+    flex: 1;
+    font-size: 18px;
+    color: #afafafaf;
+}
+
+.container > .content > .item > .description {
+    flex: 1;
+    font-size: 24px;
+}
+
+.container > .content > .item > .link {
+    flex: 8;
+    display: flex;
+    align-items: end;
+}
+
+.container > .content > .item > .type.world {
+    color: #2f34b5;
+}
+
+.container > .content > .item > .type.design {
+    color: #2fb53c;
+}
